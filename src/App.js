@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import WordSearch from './WordSearch';
 import './App.css';
 
