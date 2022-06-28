@@ -51,6 +51,11 @@
     width: 100%;
     background-color: blue;
 }
+.photoimg{
+    width: 40%;
+    height: 40%;
+    background-color: brown;
+}
 @media screen and (max-width: 850px){
     .Search{
         margin: 30px 120px;
