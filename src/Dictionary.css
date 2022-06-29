@@ -69,6 +69,9 @@
 .photo img{
   width: 95%;
 }
+.synony{
+    font-weight: 800;
+}
 @media screen and (max-width: 850px){
     .Search{
         margin: 30px 120px;
