@@ -1,16 +1,24 @@
 import React from "react";
-import "./Dictionary.css"
-export default function Photo(props){
-    if(props.photos){
-        return(
-            <div className="photo">
-            {props.photos.map(function(photo,index){
-                return <img src={photo.src.landscape} className="photoimg"/>;
-            })}
-            </div>
-        );
-   }
-    else{
-        return <div className="photoimg">hello from photo</div>;
-    }
+import "./Dictionary.css";
+export default function Photo(props) {
+  if (props.photo) {
+    return (
+      <div className="photo">
+        {props.photo.photos.map(function (photo, index) {
+          return (
+            <a href={photo.src.original} target="_blank">
+            <img
+              key={index}
+              src={photo.src.landscape}
+              alt={photo.alt}
+              className="photoimg"
+            />
+            </a>
+          );
+        })}
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

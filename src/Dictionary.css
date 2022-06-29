@@ -27,6 +27,12 @@
     font-weight: 900;
     margin-bottom: 20px;
 }
+.headd{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(67, 66, 66);
+    margin: 10px;
+}
 .meaning{
     border: 2px solid grey;
     padding: 10px;
@@ -49,12 +55,19 @@
     align-items: inline-block;
     position: relative;
     width: 100%;
-    background-color: blue;
+}
+.photo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* margin: 5px; */
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 .photoimg{
-    width: 40%;
-    height: 40%;
-    background-color: brown;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px 5px auto 5px;
+}
+.photo img{
+  width: 95%;
 }
 @media screen and (max-width: 850px){
     .Search{
@@ -69,5 +82,11 @@
 @media screen and (max-width: 600px){
     .Search{
         margin: 30px 30px;
+    }
+    .photo{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* margin: 5px; */
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
     }
 }

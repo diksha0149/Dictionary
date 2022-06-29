@@ -19,7 +19,7 @@ export default function WordSearch(){
         let apiurl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiurl).then(handlereasponse);
         let apikey = "563492ad6f917000010000019a52fb170ee6445f890467c5e02eb0cf";
-        let photoapi = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+        let photoapi = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
         let headers = { Authorization: `Bearer ${apikey}` };
         axios.get(photoapi, { headers: headers }).then(handlephotoreasponse);
       }
@@ -29,9 +29,10 @@ export default function WordSearch(){
     return(
     <div className="Search">
         <div className="heading">WordBook 📖</div>
+        <div className="headd">What word do you want to look up?</div>
         <form onSubmit={Search} >
             <div className="formsearch">
-            <input type="search" onChange={handlekeywordchange} className="searchbox"/>
+            <input type="search" onChange={handlekeywordchange} placeholder="eg. sunset" className="searchbox"/>
             </div>
         </form>
         <Results results={results}/>
