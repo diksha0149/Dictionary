@@ -52,7 +52,9 @@
     padding: 5px 50px 5px 10px;
 }
 .similar{
-    align-items: inline-block;
+    align-items: block;
+    display: inline-flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
 }
@@ -71,6 +73,13 @@
 }
 .synony{
     font-weight: 800;
+}
+.synonym{
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    border-radius: 20px;
 }
 @media screen and (max-width: 850px){
     .Search{

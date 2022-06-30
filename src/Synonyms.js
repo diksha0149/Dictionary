@@ -1,7 +1,7 @@
 import React from "react";
 import "./Dictionary.css"
 export default function Synonyms(props){
-    if(props.synonyms){
+    if (props.synonyms && props.synonyms.length > 0) {
     return( 
         <>
          <div className="synony">Synonyms</div>
